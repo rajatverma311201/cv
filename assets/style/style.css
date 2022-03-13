@@ -1,15 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
 
-*{
-    font-family: 'Montserrat', sans-serif;
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
 }
 
 #name {
-    font-family: 'Permanent Marker', cursive;
+    font-family: "Permanent Marker", cursive;
     font-weight: lighter;
     font-size: 100px;
     color: teal;
-    
 }
 
+.foot {
+    background-color: darkorange;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.skills h3{
+    text-align: center;
+}
+.skill {
+    /* border: 2px solid teal; */
+    border-radius: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 125px;
+    height: 100px;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 0 0 5px 0.5px teal;
+}
+.skill-icon {
+    height: 50px;
+    width: 50px;
+}
