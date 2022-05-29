@@ -1,12 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
 
+
+:root{
+    --primary-blue-dark:#0F044C;
+    --primary-blue-light:#141E61;
+    --secondary-blue-dark:#000957;
+    --secondary-blue-light:#2D31FA;
+    --secondary-gray:#787A91;
+    --font-primary:#ccc;
+}
+
 * {
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* background-color: black; */
+    
+}
+body{
+    background-image:url("./../../images/circles.svg");
+background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-size: cover;
+    color: #ccc;
 }
 
 #name {
@@ -22,6 +40,7 @@
 .skills {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 .skills h3{
@@ -29,15 +48,32 @@
 }
 .skill {
     /* border: 2px solid teal; */
-    border-radius: 1px;
+    /* color: #fff; */
+    border-radius: 7.5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* justify-content: center; */
     width: 125px;
     height: 100px;
-    padding: 5px;
-    margin: 10px;
-    box-shadow: 0 0 5px 0.5px teal;
+    padding: 10px;
+    margin: 25px;
+    
+    backdrop-filter: blur(5px) saturate(250%);
+    -webkit-backdrop-filter: blur(5px) saturate(250%);
+    background-color: rgba(17, 25, 40, 0.75);
+    /* border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125); */
+    box-shadow: 0 5px 50px -20px black;
+    background-color:rgba(15, 4, 76, 0.750) ;
+
+
+    transition: 0.25s;
+}
+.skill:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 60px -15px black;
+    transition: 0.25s;
 }
 .skill-icon {
     height: 50px;
